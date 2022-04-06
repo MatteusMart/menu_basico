@@ -51,21 +51,21 @@ nav ul li a:hover{
 }
 
 #imagens{
-    background-color: aqua;
+    background-color: #41d8d8;
     float: left;
     width: 100%;
     height: 600px;
 }
 
 #videos{
-    background-color: #476262;
+    background-color: #38a6a6;
     float: left;
     width: 100%;
     height: 600px;
 }
 
 #mapas{
-    background-color: #494f8a;
+    background-color: #328585;
     float: left;
     width: 100%;
     height: 600px;
