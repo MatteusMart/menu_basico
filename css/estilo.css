@@ -48,25 +48,70 @@ nav ul li a:hover{
     width: 100%;
     height: 600px;
     float: left;
+    padding: 10px;
 }
 
 #imagens{
-    background-color: #41d8d8;
+    background-color:rgb(50, 187, 187);
     float: left;
     width: 100%;
-    height: 600px;
+    height: auto;
+    padding: 10px;
 }
 
 #videos{
-    background-color: #38a6a6;
+    background-color: #44a4a4;
     float: left;
     width: 100%;
     height: 600px;
+    padding: 10px;
 }
 
 #mapas{
-    background-color: #328585;
+    background-color: #368c8c;
     float: left;
     width: 100%;
     height: 600px;
+    padding: 10px;
+}
+
+.icones-coluna{
+    background-color:#ffffff;
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.icones-img{
+    width: 150px;
+    height: 130px;
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.imagens-coluna{
+    width: 100%;
+    height: 1000px;
+    float: left;
+}
+
+figure{
+    width: 25%;
+    float: left;
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.imagens-galeria{
+    width: 100%;
+    height: 200px;
+}
+
+figcaption{
+    text-align: center;
+    padding: 10px;
 }
