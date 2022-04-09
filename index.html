@@ -7,8 +7,15 @@
     <title>Menu Básico - HTML e CSS</title>
     <link rel="stylesheet" href="css/estilo.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- importação do fonte awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--importaçao do fancybox-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    
 </head>
 <body>
     <!-- container = div principal do site-->
@@ -53,42 +60,42 @@
             <h3>Inserindo galeria de imagens</h3>
             <div class="imagens-coluna">
                 <figure>
-                    <img class="imagens-galeria" src="img/1.jpg" alt="">
+                    <img data-fancybox="gallery" data-caption="HTML-Conheça a evolução" class="imagens-galeria" src="img/1.jpg" alt="">
                     <figcaption>codigos html</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/2.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
                     <figcaption>programador</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/3.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
                     <figcaption>computadores</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/4.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
                     <figcaption>programando</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/5.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
                     <figcaption>javascript e café</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/6.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
                     <figcaption>programando em mac</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/7.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
                     <figcaption>notebook</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/8.png" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
                     <figcaption>linguagens de programação</figcaption>
                 </figure>
             </div>
@@ -103,5 +110,8 @@
             <h3>Inserindo mapas</h3>
         </div>
     </div> <!-- final do conteiner-->
+    <!-- scripts irão ficar abaixo -->
+    <!-- importaçao do JS do fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>

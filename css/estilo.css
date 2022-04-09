@@ -52,7 +52,7 @@ nav ul li a:hover{
 }
 
 #imagens{
-    background-color:rgb(234, 234, 234);
+    background-color:rgb(211, 211, 211);
     float: left;
     width: 100%;
     height: auto;
@@ -117,4 +117,19 @@ figure{
 figcaption{
     text-align: center;
     padding: 10px;
+}
+
+figure:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.imagens-galeria:hover{
+    filter: brightness(120%);
+    /* filter: blur(1px); */
+    /* filter:grayscale(100%); */
+    /* filter: saturate(190); */
+    /* filter: hue-rotate(100); */
+    /* filter: invert(80%); */
+    /* filter: sepia(70%); */
 }
