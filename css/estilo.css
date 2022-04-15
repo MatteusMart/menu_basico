@@ -47,7 +47,6 @@ nav ul li a:hover{
 }
 
 #icones{
-    background-color:#fff;
     width: 100%;
     height: auto;
     float: left;
@@ -89,18 +88,23 @@ nav ul li a:hover{
     padding: 15px;
 }
 
+.icones-img-tamanho{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: center; 
+}
+
 .icones-img{
-    width: 150px;
-    height: 130px;
+    width: 180px;
+    height: 150px;
     border: 2px solid black;
-    padding: 7px;
     border-radius: 4px;
-    margin: 10px;
 }
 
 .imagens-coluna{
-    width: 100%;
-    height: 500px;
+    width: 25%;
+    height: auto;
     float: left;
 }
 
@@ -179,3 +183,49 @@ html{
 :target{
     scroll-margin-top: 45px;
 }
+/* final da versão desktop */
+
+/* inicio da versão mobile */
+/* mobile = tablet e celular*/
+@media only screen and (max-width: 768px) {
+    nav ul li{
+        font-size: 12px;
+        float: none;
+    }
+    #icones{
+        margin-top: 230px;
+        height: auto;
+    }
+
+    .icones-coluna{
+        width: 100%;
+    }
+
+    .icones-img{
+        width: 100%;
+    }
+
+    .imagens-coluna{
+        width: 100%;
+    }
+
+    figure{
+        width: 49%;
+    }
+
+    figcaption{
+        height: 70px;
+    }
+
+    .imagens-galeria{
+         height: 110px;
+    }
+
+    .tamanho-video{
+        width: 100%;
+    }
+
+
+}
+
+/* final da versão mobile */
