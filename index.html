@@ -24,12 +24,17 @@
         <!--nav = navegação do site-->
         <nav>
             <ul>
-                <li><a href=""><i class="fa-solid fa-umbrella"></i></i></a></li>
-                <li><a href="#icones"><i class="fa-solid fa-circle-info"></i> Ícones</a></li>
-                </i>
-                <li><a href="#imagens"><i class="fa-solid fa-image"></i> Imagens</a></li>
-                <li><a href="#videos"><i class="fa-solid fa-video"></i> Vídeos</a></li>
-                <li><a href="#mapas"><i class="fa-solid fa-map"></i> Mapas</a></li>
+                <li><a href=""><i class="fa-solid fa-yin-yang"></i></a></li>
+                <li id="icone-responsivo"><i class="fa-solid fa-bars fa-2x" onclick="exibeMenu()"></i> </li>
+                <div id="exibe-menu">
+                    <li><a href="#icones"><i class="fa-solid fa-circle-info"></i> Ícones</a></li>
+                    </i>
+                    <li><a href="#imagens"><i class="fa-solid fa-image"></i> Imagens</a></li>
+                    <li><a href="#videos"><i class="fa-solid fa-video"></i> Vídeos</a></li>
+                    <li><a href="#mapas"><i class="fa-solid fa-map"></i> Mapas</a></li>
+                </div>
+                
+                
             </ul>
         </nav>
 
@@ -76,46 +81,61 @@
             <div id="imagens">
                 <h3>Inserindo galeria de imagens</h3>
                 <div class="imagens-coluna">
-                    <figure>
-                        <img data-fancybox="gallery" data-caption="HTML-Conheça a evolução" class="imagens-galeria"
-                            src="img/1.jpg" alt="">
-                        <figcaption>codigos html</figcaption>
-                    </figure>
+                        <figure>
+                            <img data-fancybox="gallery" data-caption="HTML-Conheça a evolução" class="imagens-galeria"
+                                src="img/1.jpg" alt="">
+                            <figcaption>codigos html</figcaption>
+                        </figure> 
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
-                        <figcaption>programador</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
+                            <figcaption>programador</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
-                        <figcaption>computadores</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
+                            <figcaption>computadores</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
-                        <figcaption>programando</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
+                            <figcaption>programando</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
-                        <figcaption>javascript e café</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
+                            <figcaption>javascript e café</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
-                        <figcaption>programando em mac</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
+                            <figcaption>programando em mac</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
-                        <figcaption>notebook</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
+                            <figcaption>notebook</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
-                        <figcaption>linguagens de programação</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
+                            <figcaption>linguagens de programação</figcaption>
+                        </figure>
+                    </div>
                 </div>
 
             </div>
@@ -150,6 +170,11 @@
             </div>
             <!-- rodapé da pagina ( footer) -->
         </main>
+        <div id="topo">
+            <a href="#container">
+                <i class="fa-solid fa-arrow-up fa-2x"></i>
+            </a>    
+        </div>
         <footer>
             <p> Desenvolvido por: <span class="negrito">Mateus Vinicius</span></p>
             <small>2022</small>
@@ -158,6 +183,21 @@
     <!-- scripts irão ficar abaixo -->
     <!-- importaçao do JS do fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- importação do jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- scripts especificos da pagina -->
+    <!-- linguagem js = javaScript -->
+    <script>
+        // cria uma função exibeMenu
+        function exibeMenu(){
+            // exibe/oculta o menu mobile(hamburguer)
+            $('#exibe-menu').toggle()
+        }
+
+
+    </script>
 </body>
 
 </html>
